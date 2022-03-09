@@ -25,7 +25,6 @@ public class CustomList extends ArrayAdapter<City> {
         this.context = context;
     }
 
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -47,4 +46,21 @@ public class CustomList extends ArrayAdapter<City> {
         return view;
 
     }
+
+    /**
+     * this function will get the size of list
+     * @return
+    */
+    public int getCount(){
+        return cities.size();
+    }
+
+    /**
+     * this function will add a city object into the list
+     * @param city
+     */
+    public void addCity(City city){
+        return;
+    }
+
 }
