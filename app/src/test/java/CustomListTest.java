@@ -19,6 +19,7 @@ public class CustomListTest {
         list = new CustomList(null, new ArrayList<City>());
     }
 
+
     @Test
     public void addCityTest(){
         int listSize = list.getCount();
@@ -30,7 +31,7 @@ public class CustomListTest {
     void testHasCity(){
         City myCity = new City("Vancouver","British Columbia");
         assertFalse(list.hasCity(myCity));
-        list.add(myCity);
+        list.addCity(myCity);
         assertTrue(list.hasCity(myCity));
     }
 
